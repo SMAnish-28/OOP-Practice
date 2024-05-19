@@ -11,9 +11,9 @@
 1. Encapsulation
     > Encapsulation - idea of bundling
 2. Abstraction
-    > Abstraction - 
+    > Abstraction - signing contract
 3. Inheritance
-    > Inheritance - 
+    > Inheritance - super class -> base class 
 4. Polymorphism
     > Polymorphism - 
 
