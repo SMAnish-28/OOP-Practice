@@ -15,4 +15,5 @@
 3. **Inheritance**
     > Inheritance - child class will inherit the propoerties of its Parent class while it can have  new properties as well
 4. **Polymorphism**
-    > Polymorphism - 
+    > Polymorphism - the ability(of a method) to have many forms
+    > The most common use of polymorphism is when a parent cclass reference is used to refer to a child class object
