@@ -48,10 +48,13 @@ public:
         company = Company;
         age = Age;
     }
+    // Abstraction
     void AskForPromotion(){
         if(age > 30) cout << name << " got promoted!" << endl;
         else cout << name << " sorry NO promotion for you!" << endl;
     }
+    // Inheritance
+    
 };
 
 int main(){
@@ -61,15 +64,18 @@ int main(){
     // employee1.name = "Anish";
     // employee1.company = "JU";
     // employee1.age = 19;
-    employee1.IntroduceYourself();
+    // employee1.IntroduceYourself();
 
     Employee employee2 = {"John", "Amazon", 35};
     // Employee employee2;
     // employee2.name = "John";
     // employee2.company = "Amazon";
     // employee2.age = 35;
-    employee2.IntroduceYourself();
+    // employee2.IntroduceYourself();
 
-    employee1.setAge(15);
-    cout << employee1.getName() << " is " << employee1.getAge() << " years old." << endl;
+    // employee1.setAge(15);
+    // cout << employee1.getName() << " is " << employee1.getAge() << " years old." << endl;
+
+    employee1.AskForPromotion();
+    employee2.AskForPromotion();
 }
