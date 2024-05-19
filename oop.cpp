@@ -56,7 +56,11 @@ public:
         else cout << name << " sorry NO promotion for you!" << endl;
     }
     // Inheritance
-    
+    // Polymorphism
+    virtual void work(){
+        cout << name << " is checking email, task backlog, performing tasks..." << endl;
+    } 
+    // virtual function it means that it can be overridden by the child class
 };
 
 // Inheritance
@@ -76,12 +80,13 @@ public:
         // cout << getName() << " fixed bug using " << FavProgrammingLanguage << endl;
         cout << name << " fixed bug using " << FavProgrammingLanguage << endl;
     }
+
+    void work(){
+        cout << name << " is writing " << FavProgrammingLanguage << " code" << endl;
+    } 
 };
 
 class Teacher:public Employee {
-    // Teacher class is inheriting Employee class
-    // Teacher class is a child class of Employee class
-    // Employee class is a parent/super/base class of Teacher class
 public:
     string Subject;
     // we have to create a constructor for Teacher class
@@ -93,6 +98,9 @@ public:
     void prepareLesson(){
         cout << name << " is preparing " << Subject << " lesson." << endl;
     }
+    void work(){
+        cout << name << " is teaching " << Subject << endl;
+    } 
 };
 
 int main(){
@@ -124,6 +132,15 @@ int main(){
     // d.AskForPromotion();
 
     Teacher t = Teacher("Jack", "Cool School", 35, "History");
-    t.prepareLesson();
-    t.AskForPromotion();
+    // t.prepareLesson();
+    // t.AskForPromotion();
+
+    // d.work();
+    // t.work();
+
+    Employee* e1 = &d;
+    Employee* e2 = &t;
+
+    e1->work();
+    e2->work();
 }
