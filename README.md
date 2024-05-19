@@ -8,12 +8,11 @@
 + constructor is called automatically
 ---
 ### 4 piller or principles
-1. Encapsulation
+1. **Encapsulation**
     > Encapsulation - idea of bundling
-2. Abstraction
+2. **Abstraction**
     > Abstraction - signing contract
-3. Inheritance
-    > Inheritance - super class -> base class 
-4. Polymorphism
+3. **Inheritance**
+    > Inheritance - child class will inherit the propoerties of its Parent class while it can have  new properties as well
+4. **Polymorphism**
     > Polymorphism - 
-
